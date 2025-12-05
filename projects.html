@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 599px)">
   <link rel="stylesheet" href="/css/tablet.css" media="(min-width: 600px) and (max-width: 1023px)">
-  <link rel="stylesheet" href="/css/laptop.css" media="(min-width: 1024px)"></head>
+  <link rel="stylesheet" href="/css/laptop.css" media="(min-width: 1024px)">
+</head>
 <body>
   <header>
     <div class="container bar">
@@ -25,11 +26,165 @@
 
   <main id="main" class="container">
     <h1>Projects</h1>
-    <section class="projects">
+
+    <section class="projects" aria-label="Project list">
+      <!-- Kali Linux Portfolio -->
       <article class="card">
-        <h3>Kali Linux Portfolio</h3>
+        <header>
+          <h3>Kali Linux Portfolio</h3>
+          <p class="project-date">
+            <time datetime="2025-11">Nov 2025</time>
+          </p>
+        </header>
         <p>
-          A Kali Linux OS–themed web portfolio.
+          Desktop-style Kali Linux themed portfolio that safely simulates common cybersecurity tools and
+          showcases large-scale front-end engineering (~180K LOC across 68 mini-apps).
+          Hardened with automated tests, accessibility checks, and CI on GitHub.
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/Alex-Unnippillil/kali-linux-portfolio" target="_blank" rel="noopener noreferrer">
+            GitHub Repository
+          </a>
+        </p>
+      </article>
+
+      <!-- Static Photoshop Clone -->
+      <article class="card">
+        <header>
+          <h3>Static Photoshop Clone</h3>
+          <p class="project-date">
+            <time datetime="2025-09">Sep 2025</time>
+          </p>
+        </header>
+        <p>
+          Browser-based Photoshop-style editor built with TypeScript and HTML5 Canvas, supporting drawing tools,
+          shapes, text, fill, eyedropper, and eraser. Includes multi-layer compositing, undo/redo, keyboard
+          shortcuts, and PNG/JPEG import/export, deployed as a GitHub Pages app.
+        </p>
+        <p class="project-links">
+          <a href="https://alex-unnippillil.github.io/static-photoshop-clone/" target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </a>
+        </p>
+      </article>
+
+      <!-- Roomsily -->
+      <article class="card">
+        <header>
+          <h3>Roomsily: Multi-Tenant Co-Living &amp; Rent Automation Platform</h3>
+          <p class="project-date">
+            <time datetime="2025-09">Sep 2025</time>
+          </p>
+        </header>
+        <p>
+          Multi-tenant co-living platform that automates roommate onboarding, rent splitting, and payments.
+          Built with Next.js 14, TypeScript, Tailwind, Supabase, and Stripe for secure autopay workflows,
+          plus Documenso, Cal.com, and Resend integrations for leases, scheduling, and transactional email.
+        </p>
+        <p class="project-links">
+          <a href="https://roomsily.com" target="_blank" rel="noopener noreferrer">Live Site</a> ·
+          <a href="https://github.com/Alex-Unnippillil/share-house-portal" target="_blank" rel="noopener noreferrer">
+            GitHub Repository
+          </a>
+        </p>
+      </article>
+
+      <!-- AWS Cloud Quest -->
+      <article class="card">
+        <header>
+          <h3>AWS Cloud Quest: Solutions Architect</h3>
+          <p class="project-date">
+            <time datetime="2025-09">Sep 2025</time>
+          </p>
+        </header>
+        <p>
+          Completed all solution-building assignments and labs in the AWS Cloud Quest: Solutions Architect path and
+          earned the official AWS Training digital badge. Designed secure, fault-tolerant, highly available
+          architectures using a broad set of AWS services in a live cloud environment.
+        </p>
+        <p class="project-links">
+          <a href="https://skillbuilder.aws/category/role/solutions-architect" target="_blank" rel="noopener noreferrer">
+            AWS Cloud Quest Page
+          </a>
+        </p>
+      </article>
+
+      <!-- PromptWheel -->
+      <article class="card">
+        <header>
+          <h3>PromptWheel: Context-Aware Radial AI Assistant for Windows</h3>
+          <p class="project-date">
+            <time datetime="2025-08">Aug 2025</time>
+          </p>
+        </header>
+        <p>
+          C#/.NET 8 desktop assistant that binds middle-click to a radial AI menu and screenshots screen context
+          for OpenAI-powered prompt suggestions. Ships as a self-contained win-x64 build with auto-paste workflows
+          and push-to-talk support powered by Whisper transcription.
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/Alex-Unnippillil/special-guide" target="_blank" rel="noopener noreferrer">
+            GitHub Repository
+          </a>
+        </p>
+      </article>
+
+      <!-- Cybersecurity Risk Assessment Capstone -->
+      <article class="card">
+        <header>
+          <h3>Cybersecurity Risk Assessment Capstone</h3>
+          <p class="project-date">
+            <time datetime="2024-05">May 2024</time>
+          </p>
+        </header>
+        <p>
+          Capstone cybersecurity risk assessment for Rolplay (rolplay.ai), an AI simulator for training employees'
+          conversational delivery and tone. Mapped voice → ASR → embedding data flows and recommended encryption,
+          RBAC, and retention controls aligned to NIST SP 800-53 and ISO/IEC 27001.
+        </p>
+        <p class="project-links">
+          <a href="https://rolplay.ai" target="_blank" rel="noopener noreferrer">
+            rolplay.ai
+          </a>
+        </p>
+      </article>
+
+      <!-- Symmetric-Cryptography Projects -->
+      <article class="card">
+        <header>
+          <h3>Symmetric-Cryptography Projects</h3>
+          <p class="project-date">
+            <time datetime="2023-08">Aug 2023</time>
+          </p>
+        </header>
+        <p>
+          Built six AES-based tools in Python, C++, and Java to demonstrate key symmetric-cryptography use cases.
+          Implemented PKCS#7 padding, explicit key and IV handling, and multiple block modes (ECB, CBC, CFB, OFB,
+          CTR, XTS) with basic performance benchmarking and cross-language interoperability.
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/Alex-Unnippillil?tab=repositories&amp;q=AES&amp;type=source"
+             target="_blank" rel="noopener noreferrer">
+            AES Project Repositories
+          </a>
+        </p>
+      </article>
+
+      <!-- CCNP Enterprise Case Study -->
+      <article class="card">
+        <header>
+          <h3>CCNP Enterprise Case Study: Campus-to-Cloud Network Lab</h3>
+          <p class="project-date">
+            <time datetime="2020-01">Jan 2020</time>
+          </p>
+        </header>
+        <p>
+          Designed a dual-stack, multi-site enterprise lab network aligned to the CCNP ENCOR 350-401 blueprint
+          through Cisco Networking Academy. Implemented OSPF/BGP routing, first-hop redundancy, QoS, and
+          automation workflows, then validated failover and convergence with scripted tests.
+        </p>
+        <p class="project-links">
+          <span>Cisco Networking Academy (CCNP ENCOR Lab)</span>
         </p>
       </article>
     </section>
