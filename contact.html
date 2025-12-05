@@ -4,10 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Me • Alex Unnippillil</title>
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 599px)">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 600px) and (max-width: 1023px)">
-  <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1024px)"></head>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 599px)" />
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 600px) and (max-width: 1023px)" />
+  <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1024px)" />
+</head>
 <body>
   <header>
     <div class="container bar">
@@ -29,18 +30,35 @@
     <form class="card" action="#" method="post" autocomplete="on">
       <div>
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" required minlength="2" placeholder="Your name" />
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          minlength="2"
+          placeholder="Your name"
+        />
       </div>
 
       <div>
         <label for="email">Email</label>
-        <input id="email" name="email" type="email" required placeholder="test@test.com" />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="test@test.com"
+        />
       </div>
 
       <div>
         <label for="phone">Cell No.</label>
         <input
-          id="phone" name="phone" type="tel" inputmode="tel" required
+          id="phone"
+          name="phone"
+          type="tel"
+          inputmode="tel"
+          required
           placeholder="+6477862213"
           pattern="^\+?(\d[\s-]?){7,15}$"
           title="Enter your phone number."
@@ -49,13 +67,19 @@
 
       <div>
         <label for="comments">Comments</label>
-        <textarea id="comments" name="comments" required minlength="10" placeholder="Thanks for reaching out! How can I help?"></textarea>
+        <textarea
+          id="comments"
+          name="comments"
+          required
+          minlength="10"
+          placeholder="Thanks for reaching out! How can I help?"
+        ></textarea>
       </div>
 
-      <div style="margin-top:.5rem">
+      <div style="margin-top: 0.5rem">
         <button class="button" type="submit">Submit</button>
       </div>
-      <p><small>form uses HTML validation.</small></p>
+      <p><small>Form HTML validation [requires fields, email, and phone pattern]</small></p>
     </form>
   </main>
 
