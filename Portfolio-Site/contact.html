@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me • Alex Unnippillil</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container bar">
+      <h2 class="site-title">Alex Unnippillil</h2>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page" class="active">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Contact Me</h1>
+
+    <form class="card" action="#" method="post" autocomplete="on">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required minlength="2" placeholder="Your name" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="test@test.com" />
+      </div>
+
+      <div>
+        <label for="phone">Cell No.</label>
+        <input
+          id="phone" name="phone" type="tel" inputmode="tel" required
+          placeholder="+6477862213"
+          pattern="^\+?(\d[\s-]?){7,15}$"
+          title="Enter your phone number."
+        />
+      </div>
+
+      <div>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" required minlength="10" maxlength="1000" placeholder="Thanks for reaching out! How can i help?"></textarea>
+      </div>
+
+      <div style="margin-top:.5rem">
+        <button class="button" type="submit">Submit</button>
+      </div>
+      <p><small>form uses HTML validation.</small></p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <small>© 2025 Alex Unnippillil</small>
+      <small>Contact: <a href="mailto:alex_u@live.com">alex_u@live.com</a></small>
+    </div>
+  </footer>
+</body>
+</html>
