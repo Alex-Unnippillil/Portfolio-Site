@@ -7,5 +7,6 @@
 nav li{ margin-right:1rem }
 
 /* Projects two columns for laptop */
+.projects{ overflow:auto }
 .projects .card{ float:left; width:48%; margin:0 4% 1rem 0 }
 .projects .card:nth-child(2n){ margin-right:0 }
