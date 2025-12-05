@@ -39,6 +39,8 @@ a:hover,a:focus{text-decoration:underline}
 /* Fluid container */
 .container{width:92%; max-width:1000px; margin:0 auto; padding:1rem 0}
 
+main{margin-bottom:2rem}
+
 /* Header & nav  */
 header{background:var(--surface); border-bottom:1px solid var(--border)}
 .site-title{font-weight:700; margin:.25rem 0}
@@ -72,8 +74,10 @@ textarea{min-height:140px; resize:vertical}
 
 /* Footer with an angled linear gradient(45deg) */
 footer{
+  clear:both;
+  margin-top:2rem;
   border-top:1px solid var(--border);
   background-image:linear-gradient(45deg, var(--grad-angle-1), var(--grad-angle-2));
 }
-footer .foot{display:block} /* layout refined per viewport */
+footer .foot{display:block; padding:1rem 0} /* layout refinedper each viewport */
 footer small{color:var(--muted)}
