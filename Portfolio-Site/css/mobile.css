@@ -1,0 +1,8 @@
+/* mobile.css */
+
+.hero{ padding:1.75rem 0 1rem }
+
+.about-grid > *{ width:100%; margin-bottom:1rem }  /* stacked image + text */
+.projects .card{ width:100%; margin-bottom:1rem }  /* single column */
+
+footer .foot{ padding:1rem 4% }

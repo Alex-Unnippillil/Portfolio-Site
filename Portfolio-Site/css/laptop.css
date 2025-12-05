@@ -1,0 +1,11 @@
+/* laptop.css */
+
+.container{ width:88%; max-width:1100px }
+.hero{ padding:2.5rem 0 1.5rem }
+
+/* Keep the float layouts from tablet-just tighten nav spacing */
+nav li{ margin-right:1rem }
+
+/* Projects two columns for laptop */
+.projects .card{ float:left; width:48%; margin:0 4% 1rem 0 }
+.projects .card:nth-child(2n){ margin-right:0 }

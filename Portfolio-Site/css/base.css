@@ -1,0 +1,79 @@
+/* base.css
+   Core styles and design tokens for Portfolio Site
+   Alex Unnippillil
+*/
+:root{
+  /* Neutral surfaces & text */
+  --bg:#f9fafb;        /* page background */
+  --surface:#ffffff;   /* cards, header */
+  --ink:#111827;       /* main text */
+  --muted:#6b7280;     /* secondary text */
+  --border:#e5e7eb;    /* subtle borders */
+
+  /* Brand colors */
+  --brand:#68c015;     /* primary */
+  --brand-dark:#2d850a;
+  --brand-soft:#28e08a;
+  --indigo-soft:#96dfe9; 
+
+  /* Gradient tokens */
+  --grad-top:#effff6;       /* light green */
+  --grad-bottom:#e2ffe0;    /* light green */
+  --grad-angle-1:#a5fcb4;   /* angled start */
+  --grad-angle-2:#93fd9c;   /* angled end */
+
+  --radius:12px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font:16px/1.6 system-ui,"Helvetica Neue",Arial,sans-serif;
+  color:var(--ink); background:var(--bg);
+}
+
+/* Links */
+a{color:var(--brand); text-decoration:none}
+a:hover,a:focus{text-decoration:underline}
+
+/* Fluid container */
+.container{width:92%; max-width:1000px; margin:0 auto; padding:1rem 0}
+
+/* Header & nav  */
+header{background:var(--surface); border-bottom:1px solid var(--border)}
+.site-title{font-weight:700; margin:.25rem 0}
+nav ul{list-style:none; padding:0; margin:.5rem 0 0 0}
+nav li{display:inline-block; margin-right:.75rem}
+nav a{color:inherit; padding:.25rem .125rem; border-bottom:2px solid transparent}
+nav a.active,[aria-current="page"]{border-color:var(--brand)}
+
+/* Hero with a linear gradient */
+.hero{
+  padding:2rem 0 1.25rem; text-align:center;
+  background-image:linear-gradient(to bottom, var(--grad-top), var(--grad-bottom));
+}
+.hero h1{margin:.25rem 0; font-size:clamp(1.5rem, 3.5vw, 2.25rem)}
+.hero p{color:var(--muted); margin:.25rem 0 1rem}
+.button{display:inline-block; background:var(--brand); color:#fff; padding:.6rem 1rem; border-radius:.5rem; border:0}
+
+/* Cards, media, form fields */
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1rem
+}
+img,video{max-width:100%; height:auto; border-radius:var(--radius)}
+
+label{display:block; font-weight:600; margin:.5rem 0 .25rem}
+input,textarea{
+  width:100%; padding:.65rem .75rem; border:1px solid var(--border);
+  border-radius:.5rem; background:var(--surface)
+}
+input:focus,textarea:focus{outline:2px solid var(--brand); outline-offset:2px; border-color:var(--brand)}
+textarea{min-height:140px; resize:vertical}
+
+/* Footer with an angled linear gradient(45deg) */
+footer{
+  border-top:1px solid var(--border);
+  background-image:linear-gradient(45deg, var(--grad-angle-1), var(--grad-angle-2));
+}
+footer .foot{display:block} /* layout refined per viewport */
+footer small{color:var(--muted)}
